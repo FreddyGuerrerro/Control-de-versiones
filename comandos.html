@@ -1,103 +1,272 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Comandos Git — Cerebrito</title>
-  <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Git</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        .titulo-principal{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .comando-card{
+            background:#eef2ff;
+            border-left:6px solid #2563eb;
+            padding:25px;
+            margin-bottom:30px;
+            border-radius:12px;
+            text-align:center;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .comando-card img{
+            width:100%;
+            max-width:700px;
+            margin:20px auto;
+            display:block;
+            border-radius:10px;
+            border:2px solid #dbeafe;
+        }
+
+        .comando-card h2{
+            color:#1e3a8a;
+            margin-bottom:15px;
+        }
+
+        .comando-card p{
+            font-size:17px;
+            line-height:1.7;
+        }
+
+        code{
+            display:block;
+            background:#111827;
+            color:#22c55e;
+            padding:15px;
+            border-radius:8px;
+            margin-top:15px;
+            overflow-x:auto;
+            text-align:left;
+            font-size:15px;
+        }
+
+    </style>
+
 </head>
 <body>
 
-<button class="hamburger" id="ham">☰</button>
+<header>
+    <h1>Comandos Git</h1>
+</header>
 
-<nav id="nav">
-  <a class="nav-brand" href="index.html">🧠 Eres todo un<br>Cerebrito</a>
-  <ul class="nav-links">
-    <li><a href="briefing.html">📋 Briefing</a></li>
-    <li><a href="objetivo.html">🎯 Objetivo</a></li>
-    <li><a href="historias.html">👤 Historias</a></li>
-    <li><a href="comandos.html">⌨️ Comandos Git</a></li>
-    <li><a href="aportes.html">💡 Aportes</a></li>
-    <li><a href="conclusion.html">✅ Conclusión</a></li>
-  </ul>
-  <div class="nav-footer">
-    Freddy Orlando Guerrero G.<br>
-    Electiva I · 2025
-  </div>
+<nav>
+    <a href="index.html">Briefing</a>
+    <a href="objetivo.html">Objetivo</a>
+    <a href="historias.html">Historias</a>
+    <a href="comandos.html">Comandos</a>
+    <a href="aportes.html">Aportes</a>
+    <a href="conclusion.html">Conclusión</a>
 </nav>
 
-<main>
-  <div class="hero">
-    <span class="hero-label">Página 4 · Comandos Git</span>
-    <h1>Comandos <span>Git</span></h1>
-  </div>
+<div class="container">
 
-  <div class="card">
-    <div class="cmd-header">
-      <span class="cmd-name">git add</span>
+    <div class="titulo-principal">
+        <h2>Comandos utilizados en el proyecto</h2>
+
+        <p>
+            A continuación se presentan algunos comandos básicos de Git utilizados durante el desarrollo del proyecto
+            “Eres todo un Cerebrito”, junto con ejemplos prácticos y capturas de apoyo.
+        </p>
     </div>
-    <p>Permite agregar archivos al área de preparación.</p>
-    <pre>git add .</pre>
-  </div>
 
-  <div class="card">
-    <div class="cmd-header">
-      <span class="cmd-name">git commit</span>
+    <!-- git add -->
+
+    <div class="comando-card">
+
+        <h2>git add</h2>
+
+        <p>
+            El comando <strong>git add</strong> permite agregar archivos al área de preparación antes de guardar los cambios
+            en Git.
+        </p>
+
+        <code>
+git add .
+        </code>
+
+        <p>
+            En este proyecto se utilizó para agregar todos los archivos HTML, CSS y JavaScript antes de realizar los commits.
+        </p>
+
+        <img src="img/git-add.png" alt="Comando git add">
+
     </div>
-    <p>Guarda los cambios realizados en el proyecto.</p>
-    <pre>git commit -m "Se agregó la página de historias"</pre>
-  </div>
 
-  <div class="card">
-    <div class="cmd-header">
-      <span class="cmd-name">git branch</span>
+    <!-- git commit -->
+
+    <div class="comando-card">
+
+        <h2>git commit</h2>
+
+        <p>
+            El comando <strong>git commit</strong> permite guardar los cambios realizados dentro del repositorio local.
+        </p>
+
+        <code>
+git commit -m "Se agregó la página de historias"
+        </code>
+
+        <p>
+            Este comando fue utilizado para registrar las actualizaciones realizadas en las páginas del proyecto.
+        </p>
+
+        <img src="img/git-commit.png" alt="Comando git commit">
+
     </div>
-    <p>Permite crear y administrar ramas.</p>
-    <pre>git branch desarrollo</pre>
-  </div>
 
-  <div class="card">
-    <div class="cmd-header">
-      <span class="cmd-name">git remote</span>
+    <!-- git branch -->
+
+    <div class="comando-card">
+
+        <h2>git branch</h2>
+
+        <p>
+            El comando <strong>git branch</strong> permite crear y administrar ramas dentro del proyecto.
+        </p>
+
+        <code>
+git branch desarrollo
+        </code>
+
+        <p>
+            Gracias a este comando se pueden realizar pruebas o nuevas funcionalidades sin afectar la rama principal.
+        </p>
+
+        <img src="img/git-branch.png" alt="Comando git branch">
+
     </div>
-    <p>Conecta el proyecto local con GitHub.</p>
-    <pre>git remote add origin https://github.com/FreddyGuerrerro/Plataforma-de-Aprendizaje-Eres-todo-un-Cerebrito.git</pre>
-  </div>
 
-  <div class="card">
-    <div class="cmd-header">
-      <span class="cmd-name">git push</span>
+    <!-- git remote -->
+
+    <div class="comando-card">
+
+        <h2>git remote</h2>
+
+        <p>
+            El comando <strong>git remote</strong> conecta el proyecto local con un repositorio remoto en GitHub.
+        </p>
+
+        <code>
+git remote add origin https://github.com/FreddyGuerrerro/Plataforma-de-Aprendizaje-Eres-todo-un-Cerebrito.git
+        </code>
+
+        <p>
+            Este comando permitió vincular el proyecto desarrollado en Visual Studio Code con GitHub.
+        </p>
+
+        <img src="img/git-remote.png" alt="Comando git remote">
+
     </div>
-    <p>Envía los cambios al repositorio remoto.</p>
-    <pre>git push origin main</pre>
-  </div>
 
-  <div class="card">
-    <div class="cmd-header">
-      <span class="cmd-name">git status</span>
+    <!-- git push -->
+
+    <div class="comando-card">
+
+        <h2>git push</h2>
+
+        <p>
+            El comando <strong>git push</strong> envía los cambios realizados al repositorio remoto.
+        </p>
+
+        <code>
+git push origin main
+        </code>
+
+        <p>
+            Fue utilizado para publicar las actualizaciones del proyecto en GitHub Pages.
+        </p>
+
+        <img src="img/git-push.png" alt="Comando git push">
+
     </div>
-    <p>Muestra el estado actual de los archivos.</p>
-    <pre>git status</pre>
-  </div>
 
-  <div class="card">
-    <div class="cmd-header">
-      <span class="cmd-name">git log</span>
+    <!-- git status -->
+
+    <div class="comando-card">
+
+        <h2>git status</h2>
+
+        <p>
+            El comando <strong>git status</strong> muestra el estado actual de los archivos del proyecto.
+        </p>
+
+        <code>
+git status
+        </code>
+
+        <p>
+            Permitió verificar qué archivos habían sido modificados, agregados o pendientes de commit.
+        </p>
+
+        <img src="img/git-status.png" alt="Comando git status">
+
     </div>
-    <p>Muestra el historial de commits.</p>
-    <pre>git log</pre>
-  </div>
 
-  <div class="card">
-    <div class="cmd-header">
-      <span class="cmd-name">git clone</span>
+    <!-- git log -->
+
+    <div class="comando-card">
+
+        <h2>git log</h2>
+
+        <p>
+            El comando <strong>git log</strong> permite visualizar el historial de commits realizados en el proyecto.
+        </p>
+
+        <code>
+git log
+        </code>
+
+        <p>
+            Se utilizó para revisar las versiones y cambios implementados durante el desarrollo.
+        </p>
+
+        <img src="img/git-log.png" alt="Comando git log">
+
     </div>
-    <p>Permite clonar un repositorio.</p>
-    <pre>git clone https://github.com/FreddyGuerrerro/Plataforma-de-Aprendizaje-Eres-todo-un-Cerebrito.git</pre>
-  </div>
 
-</main>
+    <!-- git clone -->
 
-<script src="nav.js"></script>
+    <div class="comando-card">
+
+        <h2>git clone</h2>
+
+        <p>
+            El comando <strong>git clone</strong> permite descargar una copia completa de un repositorio remoto.
+        </p>
+
+        <code>
+git clone https://github.com/FreddyGuerrerro/Plataforma-de-Aprendizaje-Eres-todo-un-Cerebrito.git
+        </code>
+
+        <p>
+            Este comando facilita trabajar el proyecto en diferentes computadores o compartirlo con otros usuarios.
+        </p>
+
+        <img src="img/git-clone.png" alt="Comando git clone">
+
+    </div>
+
+</div>
+
+<footer>
+    Proyecto GitHub - Eres todo un Cerebrito
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
