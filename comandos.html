@@ -1,81 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comandos Git</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Comandos Git — Cerebrito</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
-<header>
-    <h1>Comandos Git</h1>
-</header>
+<button class="hamburger" id="ham">☰</button>
 
-<nav>
-    <a href="index.html">Briefing</a>
-    <a href="objetivo.html">Objetivo</a>
-    <a href="historias.html">Historias</a>
-    <a href="comandos.html">Comandos</a>
-    <a href="aportes.html">Aportes</a>
-    <a href="conclusion.html">Conclusión</a>
+<nav id="nav">
+  <a class="nav-brand" href="index.html">🧠 Eres todo un<br>Cerebrito</a>
+  <ul class="nav-links">
+    <li><a href="briefing.html">📋 Briefing</a></li>
+    <li><a href="objetivo.html">🎯 Objetivo</a></li>
+    <li><a href="historias.html">👤 Historias</a></li>
+    <li><a href="comandos.html">⌨️ Comandos Git</a></li>
+    <li><a href="aportes.html">💡 Aportes</a></li>
+    <li><a href="conclusion.html">✅ Conclusión</a></li>
+  </ul>
+  <div class="nav-footer">
+    Freddy Orlando Guerrero G.<br>
+    Electiva I · 2025
+  </div>
 </nav>
 
-<div class="container">
+<main>
+  <div class="hero">
+    <span class="hero-label">Página 4 · Comandos Git</span>
+    <h1>Comandos <span>Git</span></h1>
+  </div>
 
-    <div class="card">
-        <h2>git add</h2>
-        <p>Permite agregar archivos al área de preparación.</p>
-        <code>git add .</code>
+  <div class="card">
+    <div class="cmd-header">
+      <span class="cmd-name">git add</span>
     </div>
+    <p>Permite agregar archivos al área de preparación.</p>
+    <pre>git add .</pre>
+  </div>
 
-    <div class="card">
-        <h2>git commit</h2>
-        <p>Guarda los cambios realizados en el proyecto.</p>
-        <code>git commit -m "Se agregó la página de historias"</code>
+  <div class="card">
+    <div class="cmd-header">
+      <span class="cmd-name">git commit</span>
     </div>
+    <p>Guarda los cambios realizados en el proyecto.</p>
+    <pre>git commit -m "Se agregó la página de historias"</pre>
+  </div>
 
-    <div class="card">
-        <h2>git branch</h2>
-        <p>Permite crear y administrar ramas.</p>
-        <code>git branch desarrollo</code>
+  <div class="card">
+    <div class="cmd-header">
+      <span class="cmd-name">git branch</span>
     </div>
+    <p>Permite crear y administrar ramas.</p>
+    <pre>git branch desarrollo</pre>
+  </div>
 
-    <div class="card">
-        <h2>git remote</h2>
-        <p>Conecta el proyecto local con GitHub.</p>
-        <code>git remote add origin https://github.com/FreddyGuerrerro/Plataforma-de-Aprendizaje-Eres-todo-un-Cerebrito.git</code>
+  <div class="card">
+    <div class="cmd-header">
+      <span class="cmd-name">git remote</span>
     </div>
+    <p>Conecta el proyecto local con GitHub.</p>
+    <pre>git remote add origin https://github.com/FreddyGuerrerro/Plataforma-de-Aprendizaje-Eres-todo-un-Cerebrito.git</pre>
+  </div>
 
-    <div class="card">
-        <h2>git push</h2>
-        <p>Envía los cambios al repositorio remoto.</p>
-        <code>git push origin main</code>
+  <div class="card">
+    <div class="cmd-header">
+      <span class="cmd-name">git push</span>
     </div>
+    <p>Envía los cambios al repositorio remoto.</p>
+    <pre>git push origin main</pre>
+  </div>
 
-    <div class="card">
-        <h2>git status</h2>
-        <p>Muestra el estado actual de los archivos.</p>
-        <code>git status</code>
+  <div class="card">
+    <div class="cmd-header">
+      <span class="cmd-name">git status</span>
     </div>
+    <p>Muestra el estado actual de los archivos.</p>
+    <pre>git status</pre>
+  </div>
 
-    <div class="card">
-        <h2>git log</h2>
-        <p>Muestra el historial de commits.</p>
-        <code>git log</code>
+  <div class="card">
+    <div class="cmd-header">
+      <span class="cmd-name">git log</span>
     </div>
+    <p>Muestra el historial de commits.</p>
+    <pre>git log</pre>
+  </div>
 
-    <div class="card">
-        <h2>git clone</h2>
-        <p>Permite clonar un repositorio.</p>
-        <code>git clone https://github.com/FreddyGuerrerro/Plataforma-de-Aprendizaje-Eres-todo-un-Cerebrito.git</code>
+  <div class="card">
+    <div class="cmd-header">
+      <span class="cmd-name">git clone</span>
     </div>
+    <p>Permite clonar un repositorio.</p>
+    <pre>git clone https://github.com/FreddyGuerrerro/Plataforma-de-Aprendizaje-Eres-todo-un-Cerebrito.git</pre>
+  </div>
 
-</div>
+</main>
 
-<footer>
-    Proyecto GitHub - Eres todo un Cerebrito
-</footer>
-
+<script src="nav.js"></script>
 </body>
 </html>
